@@ -36,6 +36,21 @@ header {
   header nav {
     display: inline-block;
     float: left; }
+    header nav button {
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      display: inline-block;
+      line-height: 18px;
+      font-weight: 700;
+      height: 30px;
+      padding: 7px 9px;
+      position: relative;
+      text-transform: uppercase; }
+      header nav button:first-child {
+        box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06), inset -1px -1px 1px 0 rgba(0, 0, 0, 0.02);
+        border: 1px solid #e2e2e2;
+        padding: 7px 9px; }
   header .logo {
     display: inline-block;
     margin: 0 auto;
