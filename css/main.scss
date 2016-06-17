@@ -9,6 +9,13 @@ body {
   padding-top: 30px;;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 /*
   CLEARFIX
 */
@@ -47,6 +54,7 @@ header {
       position: relative;
       text-transform: uppercase;
       &:first-child {
+        @include border-radius(3px);
         box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
         border: 1px solid #e2e2e2;
         padding: 7px 9px;
@@ -62,5 +70,14 @@ header {
   .tabs {
     display: inline-block;
     float: right;
+    button:nth-child(-n+2) {
+      @include border-radius(3px);
+      background-color: #6288a5;
+      border: 1px solid #4d7b9f;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      height: 30px;
+    }
   }
 }
