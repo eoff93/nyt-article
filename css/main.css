@@ -60,6 +60,9 @@ header {
     margin: 0 auto;
     position: inherit;
     width: 185px; }
+    header .logo img {
+      position: inherit;
+      bottom: -6px; }
   header .tabs {
     display: inline-block;
     float: right; }

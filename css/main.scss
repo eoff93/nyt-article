@@ -66,6 +66,10 @@ header {
     margin: 0 auto;
     position: inherit;
     width: 185px;
+    img {
+      position: inherit;
+      bottom: -6px;
+    }
   }
   .tabs {
     display: inline-block;
