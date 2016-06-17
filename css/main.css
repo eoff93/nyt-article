@@ -30,8 +30,10 @@ body {
   margin: 0 auto; }
 
 header {
+  padding-top: 8px;
   position: relative;
   text-align: center;
+  height: 48px;
   width: 1366px; }
   header nav {
     display: inline-block;
@@ -76,6 +78,7 @@ header {
       bottom: -6px; }
   header .tabs {
     position: inherit;
+    top: -2px;
     display: inline-block;
     float: right; }
     header .tabs button:nth-child(-n+2) {
