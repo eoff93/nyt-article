@@ -4,6 +4,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  padding-top: 30px; }
+
 /*
   CLEARFIX
 */
@@ -22,5 +25,24 @@ html {
   zoom: 1; }
 
 /* IE7 */
+.page-container {
+  width: 1366px;
+  margin: 0 auto; }
+
+header {
+  position: relative;
+  text-align: center;
+  width: 1366px; }
+  header nav {
+    display: inline-block;
+    float: left; }
+  header .logo {
+    display: inline-block;
+    margin: 0 auto;
+    position: inherit;
+    width: 185px; }
+  header .tabs {
+    display: inline-block;
+    float: right; }
 
 /*# sourceMappingURL=main.css.map */
