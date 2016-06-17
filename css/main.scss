@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  padding-top: 30px;;
+  padding-top: 47px;
 }
 
 @mixin border-radius($radius) {
@@ -41,7 +41,6 @@ header {
   nav {
     display: inline-block;
     float: left;
-
     button {
       background-color: transparent;
       border: none;
@@ -53,11 +52,30 @@ header {
       padding: 7px 9px;
       position: relative;
       text-transform: uppercase;
+
+      .fa-bars {
+        font-size: 16px;
+      }
+
+      .fa-search {
+        font-size: 16px;
+      }
+
+      span {
+        display: inline-block;
+        position: relative;
+        top: -1px;
+      }
       &:first-child {
         @include border-radius(3px);
         box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
         border: 1px solid #e2e2e2;
         padding: 7px 9px;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        position: relative;
+        top: -1px;
       }
     }
   }
@@ -72,6 +90,7 @@ header {
     }
   }
   .tabs {
+    position: inherit;
     display: inline-block;
     float: right;
     button:nth-child(-n+2) {
@@ -81,7 +100,18 @@ header {
       color: #fff;
       font-weight: 700;
       font-size: 12px;
+      text-transform: uppercase;
       height: 30px;
+    }
+    button:last-child {
+      background-color: transparent;
+      border: none;
+      height: 30px;
+    }
+    .fa-cog {
+      position: relative;
+      top: 4px;
+      font-size: 24px;
     }
   }
 }
